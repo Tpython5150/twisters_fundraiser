@@ -1,0 +1,71 @@
+nav {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2em;
+}
+
+.navbar-brand {
+    width: 10em;
+}
+
+.nav-item:hover {
+    background: rgb(80, 76, 196);
+    transition: all 0.75s;
+}
+
+.navbar-expand-lg {
+    justify-content: space-around;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.flex-grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+}
+
+.fundraiser-list {
+    font-family: 'Brush Script MT', cursive;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.fundraiser-list h2 {
+    font-size: 3em;
+}
+
+.fundraiser-list ul {
+    list-style: none;
+    font-size: 2em;
+    padding: 0 25px;
+}
+
+.tax-document img {
+    height: 500px;
+    object-fit: contain;
+}
+
+body {
+    position: relative;
+}
+
+body::before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .55;
+    background-image: url('../images/background_images/softball_field_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    position: relative;
+}
