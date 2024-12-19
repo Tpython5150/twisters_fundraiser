@@ -1,4 +1,4 @@
-nav {
+/* nav {
     font-family: 'Brush Script MT', cursive;
     font-size: 2em;
 }
@@ -10,78 +10,18 @@ nav {
 .nav-item:hover {
     background: rgb(80, 76, 196);
     transition: all 0.75s;
-}
+} */
 
-img {
+/* img {
     width: 100%;
     object-fit: contain;
-}
+} */
 
-.flex-grid {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 10px;
-}
-
-.fundraiser-list {
-    font-family: 'Brush Script MT', cursive;
-    padding: 10px;
-}
-
-.fundraiser-list h2 {
-    font-size: 3em;
-}
-
-.fundraiser-list ul {
-    list-style: none;
-    font-size: 2em;
-    padding: 0 25px;
-}
-
-.tax-document img {
-    height: 500px;
-    object-fit: contain;
-}
-
-#my-carousel {
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid white;
-    height: 20%;
-    padding: 10px;
+main {
     background: white;
-    overflow-x: scroll;
-    border: 1px solid black;
-
-}
-.my-carousel-item {
-    width: 33%;
-    height: 100%;
-    flex-shrink: 0;
-    border: 2px solid lightgray;
-    padding: 3px;
-    box-shadow: 5px 5px 10px gray;
 }
 
-#my-carousel img {
-    height: 100%;
-    object-fit: contain;
-}
 
-.bg-black {
-    background: black;
-}
-
-.hide-scroll::-webkit-scrollbar {
-    display: none;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
 
 .sponsors-plug {
     width: 100%;
@@ -89,11 +29,8 @@ img {
     background: white;
 }
 
-body {
-    position: relative;
-}
 
-body::before {
+/* body::before {
     content: ' ';
     display: block;
     position: absolute;
@@ -102,11 +39,20 @@ body::before {
     width: 100%;
     height: 100%;
     opacity: .55;
-    background-image: url('./images/background_images/nightTimeLights.jpg');
+    background-image: url('../images/background_images/nightTimeLights.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+} */
+
+.go-pro-sports-dome {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
-main {
-    position: relative;
+video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }

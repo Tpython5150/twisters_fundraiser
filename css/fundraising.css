@@ -1,71 +1,61 @@
-nav {
-    font-family: 'Brush Script MT', cursive;
-    font-size: 2em;
-}
-
-.navbar-brand {
-    width: 10em;
-}
-
-.nav-item:hover {
-    background: rgb(80, 76, 196);
-    transition: all 0.75s;
-}
-
-.navbar-expand-lg {
-    justify-content: space-around;
-}
-
-img {
-    width: 100%;
-    object-fit: contain;
-}
-
 .flex-grid {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    gap: 17px;
+    
 }
 
-.fundraiser-list {
-    font-family: 'Brush Script MT', cursive;
-    padding: 10px;
-    margin-left: 10px;
+.flex-grid-item {
+    overflow-y: scroll;
 }
 
-.fundraiser-list h2 {
-    font-size: 3em;
-}
-
-.fundraiser-list ul {
-    list-style: none;
-    font-size: 2em;
-    padding: 0 25px;
-}
-
-.tax-document img {
-    height: 500px;
+.flex-grid-item img {
+    position: absolute;
+    width: 100%;
     object-fit: contain;
 }
 
-body {
-    position: relative;
-}
-
-body::before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .55;
-    background-image: url('../images/background_images/softball_field_2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 main {
-    position: relative;
+    padding: 10px;
+}
+
+.fundraising-nav {
+    border: 4px double white;
+    font-family: 'Brush Script MT', cursive;
+    box-shadow: 0 0 5px white;
+    padding: 10px;
+}
+.fundraising-nav h2 {
+    font-size: 2.5em;
+    color: plum;
+    text-shadow: plum 1px 0 10px;
+}
+.fundraising-nav-items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.fundraising-nav-item {
+    font-size: 1.75em;
+    padding: 3px;
+    color: gray;
+    transition: all 0.5s;
+}
+.fundraising-nav-item:hover {
+    /* background-color: white; */
+    font-size: 1.8em;
+    transform: translate(5px, 5px);
+    color: white;
+    text-shadow: white 0 0 1em;
+}
+.fundraising-nav-item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.transparent-bg::before { 
+    background-image: url('../images/background_images/softball_field_2.jpg');
 }
