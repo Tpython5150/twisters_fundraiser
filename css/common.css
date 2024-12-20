@@ -1,5 +1,5 @@
 body {
-    height: 100vh;
+    min-height: 100vh;
     display: grid;
     grid-template-rows: 1fr 7fr 2fr;
 }
@@ -137,4 +137,14 @@ Background colors
 */
 .bg-black {
     background-color: black;
+}
+
+/*
+Sizing
+*/
+.w100 {
+    width: 100%;
+}
+.h100 {
+    height: 100%;
 }

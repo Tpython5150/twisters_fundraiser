@@ -61,6 +61,5 @@ const loadImages = () => {
 
 
 $(document).ready(function() {
-  $('<footer>').appendTo('body');
   createSliderElements()
 });
