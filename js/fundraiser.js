@@ -3,11 +3,11 @@ const taxDocumentHtml = $(`<div id="tax-document" class="hide-scroll fill-conten
 </div>`)
 
 const calendarHtml = $(`<div id="calander class="hide-scroll fill-content-parent w100 h100">
-<img src="../images/calendar1.jpg" class="hide-scroll fill-content-child w100 h100"/>
+<img src="../images/fundraiser/calendar1.jpg" class="hide-scroll fill-content-child w100 h100"/>
 </div>`);
 
 const couponCardHtml = $(`<div id="coupon-card class="hide-scroll fill-content-parent w100 h100">
-<img src="../images/couponcard2.jpg" class="hide-scroll fill-content-child w100 h100"/>
+<img src="../images/fundraiser/couponcard2.jpg" class="hide-scroll fill-content-child w100 h100"/>
 </div>`);
 
 const raffleHtml = $(`<div>Coming Soon</div>`);
