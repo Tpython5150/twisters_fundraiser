@@ -29,8 +29,7 @@ nav {
 }
 
 /*
-Hides scroll bar. Apply t
-o container.
+Hides scroll bar. Apply to container.
 */
 .hide-scroll {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
@@ -74,7 +73,9 @@ Sponsors Slide
 
 .__slide-track {
     animation: scroll 10s linear infinite;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     width: calc(250px * 14);
 }
 

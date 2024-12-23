@@ -1,6 +1,6 @@
 const goProSportsDomeAd = `<div class="go-pro-sports-dome layout">
       <div class="banner">
-        <img src="../images/logo/go_pro_sports_domo_gp_logo.png">
+        <img src="../images/logo/go_pro_sports_dome_gp_logo.png">
       </div>
       <div class="row-1">
         <video autoplay="" loop="" muted="" playsinline="true" disablepictureinpicture="true">
@@ -9,12 +9,12 @@ const goProSportsDomeAd = `<div class="go-pro-sports-dome layout">
         <div class="row-1-group-1">
           <h1>GO PRO SPORTS DOME</h1>
           <p>LESSONS. RENTALS. GAMES.</p>
-          <button>VISIT US</button>
           <div class="social-media">
-            <a href="https://www.facebook.com/goproball" target="_blank"><img src="../images/icon/facebook.svg"></i></a> 
-            <a href="https://twitter.com/gopro_ball" target="_blank"><img id="x" src="../images/icon/x.svg"></i></a>
-            <a href="https://www.instagram.com/gopro_ball" target="_blank"><img src="../images/icon/instagram.svg"></i></a>
-            <a href="https://www.youtube.com/@goprosportsacademy1826" target="_blank"><img src="../images/icon/youtube.png"></i></a>
+            <a href="https://www.goproball.com/" target="_blank"><img src="../images/logo/go_pro_sports_dome_gp_logo.png"></a>
+            <a href="https://www.facebook.com/goproball" target="_blank"><img src="../images/logo/facebook.svg"></a> 
+            <a href="https://twitter.com/gopro_ball" target="_blank"><img id="x" src="../images/logo/x.svg"></a>
+            <a href="https://www.instagram.com/gopro_ball" target="_blank"><img src="../images/logo/instagram.svg"></a>
+            <a href="https://www.youtube.com/@goprosportsacademy1826" target="_blank"><img src="../images/logo/youtube.png"></a>
           </div>
         </div>
       </div>
@@ -36,25 +36,25 @@ const stateFarmAd = `<div class="state-farm layout">
       </div>
       <div class="row-1-col-2">
         <h2>Auto. Home. Condo. Renters. Personal Articles. Business. Life. Health. Pet.</h2>
-        <h1>Call 815-407-0954</h1>
-      </div>
-    </div>
-    <div class="row-2">
-      <div class="social-media">
-        <div class="icon-container">
-          <img src="../images/icon/facebook.svg">
-        </div>
-        <div class="icon-container">
-          <img src="../images/icon/instagram.svg">
+        <h1><a class="phone" href="tel:8154070954">Call 815-407-0954</a></h1>
+        <div class="social-media">
+          <a href="https://mariacapetillo.com/" target="_blank"><img src="../images/logo/state_farm_symbol.svg"></a>
+          <a href="https://www.facebook.com/111007972296450" target="_blank"><img src="../images/logo/facebook.svg"></a> 
+          <a href="https://www.linkedin.com/in/maria-capetillo-6b684127" target="_blank"><img src="../images/logo/linkedin.svg"></a>
+          <a href="https://www.instagram.com/maria.capetillo.insurance/" target="_blank"><img src="../images/logo/instagram.svg"></a>
+          <a href="https://www.yelp.com/biz/maria-capetillo-state-farm-insurance-agent-romeoville" target="_blank"><img src="../images/logo/yelp.svg"></a>
+          <a href="https://www.google.com/search?hl=en-US&gl=us&q=Maria+Capetillo+-+State+Farm+Insurance+Agent,+452+Weber+Rd+A,+Romeoville,+IL+60446" target="_blank"><img src="../images/logo/google.svg"></a>
+          <a href="https://www.youtube.com/@goprosportsacademy1826" target="_blank"><img src="../images/logo/youtube.png"></a>
         </div>
       </div>
     </div>
   </div>`;
 
 class Sponsor {
-  constructor(name, logo) {
+  constructor(name, logo, classes = '') {
     this.name = name;
     this.logo = logo;
+    this.classes = classes;
   }
 }
 
@@ -65,7 +65,7 @@ const createSliderElements = (workdir) => {
   console.log(sponsors);
 
   for(let i = 0; i < sponsors.length; i++) {
-    slideTrack.append($(`<div data-name="${sponsors[i].name}" class="__slide">`).append($(`<img src="${workdir + 'images/logo/' + sponsors[i].logo}" height="100" width="250" alt="">`)));
+    slideTrack.append($(`<div data-name="${sponsors[i].name}" class="__slide ${sponsors[i].classes}">`).append($(`<img src="${workdir + 'images/logo/' + sponsors[i].logo}" height="100" width="250" alt="">`)));
   }
 
   const slider = $('<div class="__slider hide-scroll">');
@@ -76,7 +76,7 @@ const createSliderElements = (workdir) => {
 
 const loadSponsors = () => {
   return [
-      new Sponsor('gopro', 'gopro_logo.svg'),
+      new Sponsor('gopro', 'go_pro_sports_dome_gp_logo.png', 'bg-black'),
       new Sponsor('statefarm', 'state_farm_logo.svg'),
       new Sponsor('profresh', 'pro_fresh_cleaning.jpg'),
       new Sponsor('buffalowildwings', 'buffalo_wild_wings_logo.svg'),
@@ -84,7 +84,7 @@ const loadSponsors = () => {
       new Sponsor('raisingcanes', 'raising_canes_logo.png'),
       new Sponsor('panerabread', 'panera_bread_logo.png'),
       new Sponsor('darcymotors', 'darcy_motors_logo.png'),
-      new Sponsor('gopro', 'gopro_logo.svg'),
+      new Sponsor('gopro', 'go_pro_sports_dome_gp_logo.png', 'bg-black'),
       new Sponsor('statefarm', 'state_farm_logo.svg'),
       new Sponsor('profresh', 'pro_fresh_cleaning.jpg'),
       new Sponsor('buffalowildwings', 'buffalo_wild_wings_logo.svg'),
