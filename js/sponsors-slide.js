@@ -50,6 +50,11 @@ const stateFarmAd = `<div class="state-farm layout">
     </div>
   </div>`;
 
+const contact = `<div class="contact layout">
+<h1>Website Developer</h1>
+<h2>Theara Ya</h2>
+<h3><a href="mailto:theara.ya@outlook.com">theara.ya@outlook.com</a></h3></div>`
+
 class Sponsor {
   constructor(name, logo, classes = '') {
     this.name = name;
@@ -107,13 +112,13 @@ $(document).ready(function() {
 
 
   $('.__slide').click(function() {
-    console.log($(this).data('name'))
-
     if($('title').html() == 'Sponsors') {
       if($(this).data('name') == 'gopro') {
         $('main').html(goProSportsDomeAd);
       } else if($(this).data('name') == 'statefarm') {
         $('main').html(stateFarmAd);
+      } else {
+        $('main').html(contact);
       }
     } else {
       window.location.href = workdir + 'html/sponsors.html'
@@ -121,6 +126,6 @@ $(document).ready(function() {
   });
 
   if($('title').html() == 'Sponsors') {
-    $('main').html(goProSportsDomeAd);
+    $('main').html(contact);
   }
 });
