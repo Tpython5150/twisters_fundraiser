@@ -1,7 +1,7 @@
 body {
     min-height: 100vh;
     display: grid;
-    grid-template-rows: 1fr 7fr 2fr;
+    grid-template-rows: 1fr 70vh 20vh;
 }
 
 /*
@@ -21,7 +21,7 @@ nav {
 }
 .navbar-nav {
     font-size: 1.75em;
-    transform: translateX(-12%);
+    background-color: black;
 }
 .nav-item:hover {
     background: rgb(80, 76, 196);
@@ -29,7 +29,8 @@ nav {
 }
 
 /*
-Hides scroll bar. Apply to container.
+Hides scroll bar. Apply t
+o container.
 */
 .hide-scroll {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */

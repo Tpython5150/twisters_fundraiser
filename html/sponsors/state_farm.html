@@ -17,36 +17,6 @@
       height: 100vh;
     }
 
-    /* .background-layer {
-      background: #D62311;
-      width: 100%;
-      height: 100%;
-    }
-
-    .content-layout {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      width: 100%;
-      height: 100%;
-    }
-
-    .group-1 {
-      width: 100%;
-      height: 100%;
-    }
-
-    .group-1 img {
-      object-fit: contain;
-    }
-
-    .group-2 {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      /* width: calc(64px * 5) */
-    }
-
     .group-2-1 {
       width: 100%;
       color: white;
@@ -82,7 +52,7 @@
       height: 100%;
       display: flex;
       flex-direction: row;
-      flex-wrap : wrap;
+      flex-wrap: wrap;
     }
 
     .sponsor-banner {
@@ -121,6 +91,7 @@
       align-items: center;
       margin: auto;
     }
+
     .profile-image {
       width: calc(15vw);
       height: calc(15vw);
@@ -134,12 +105,6 @@
       background-origin: padding-box;
       overflow: hidden;
     }
-
-    /* .profile-image img { 
-      background: gray;
-      position: absolute;
-      z-index: -1000;
-    } */
 
     .ad-text {
       flex-grow: 1;
@@ -160,6 +125,7 @@
       right: 0;
 
     }
+
     .icon-container img {
       width: 64px;
       height: 64px;
@@ -169,13 +135,10 @@
 
 <body>
   <div class="content-layer">
-
     <div class="sponsor-banner">
       <img src="../../images/sponsors/carousel/state_farm_logo.svg">
     </div>
-
     <div class="row-1">
-
       <div class="row-1-col-1">
         <div class="profile-image">
           <!-- <img src="../../images/sponsors/state_farm_agent_profile.jpg"> -->
@@ -185,14 +148,11 @@
           <p>State Farm Insurance Agent</p>
         </div>
       </div>
-
       <div class="ad-text">
         <h2>Auto. Home. Condo. Renters. Personal Articles. Business. Life. Health. Pet.</h2>
         <h1>Call 815-407-0954</h1>
       </div>
-      
     </div>
-
     <div class="row-2">
       <div class="social-media">
         <div class="icon-container">
@@ -203,70 +163,7 @@
         </div>
       </div>
     </div>
-
   </div>
-
-  <!-- <div class="background-layer">
-
-    <div class="content-layout">
-      <div class="group-1">
-        <img src="../../images/sponsors/state_farm_agent_profile_transparent.png">
-      </div>
-      <div class="group-2">
-        <div class="group-2-1">
-          <div id="statefarm">
-            <img src="../../images/sponsors/carousel/state_farm_logo.svg">
-          </div>
-          <div class="inline-flex gap-0.5">
-            <svg width="22" height="22" viewBox="0 0 24 24">
-              <path id="gray-star-0" d="M12 0L16 8.5L24 9.5L18 14.5L20 24L12 19L4 24L6 14.5L0 9.5L8 8.5L12 0Z"
-                fill="#DCDCDC"></path>
-              <path id="gold-star-0" d="M12 0L16 8.5L24 9.5L18 14.5L20 24L12 19L4 24L6 14.5L0 9.5L8 8.5L12 0Z"
-                fill="#F1AA1B" style="clip-path: inset(0 calc((1 - (4.9 - 0)) * 100%) 0 0)"></path>
-            </svg>
-            <svg width="22" height="22" viewBox="0 0 24 24">
-              <path id="gray-star-1" d="M12 0L16 8.5L24 9.5L18 14.5L20 24L12 19L4 24L6 14.5L0 9.5L8 8.5L12 0Z"
-                fill="#DCDCDC"></path>
-              <path id="gold-star-1" d="M12 0L16 8.5L24 9.5L18 14.5L20 24L12 19L4 24L6 14.5L0 9.5L8 8.5L12 0Z"
-                fill="#F1AA1B" style="clip-path: inset(0 calc((1 - (4.9 - 1)) * 100%) 0 0)"></path>
-            </svg>
-            <svg width="22" height="22" viewBox="0 0 24 24">
-              <path id="gray-star-2" d="M12 0L16 8.5L24 9.5L18 14.5L20 24L12 19L4 24L6 14.5L0 9.5L8 8.5L12 0Z"
-                fill="#DCDCDC"></path>
-              <path id="gold-star-2" d="M12 0L16 8.5L24 9.5L18 14.5L20 24L12 19L4 24L6 14.5L0 9.5L8 8.5L12 0Z"
-                fill="#F1AA1B" style="clip-path: inset(0 calc((1 - (4.9 - 2)) * 100%) 0 0)"></path>
-            </svg>
-            <svg width="22" height="22" viewBox="0 0 24 24">
-              <path id="gray-star-3" d="M12 0L16 8.5L24 9.5L18 14.5L20 24L12 19L4 24L6 14.5L0 9.5L8 8.5L12 0Z"
-                fill="#DCDCDC"></path>
-              <path id="gold-star-3" d="M12 0L16 8.5L24 9.5L18 14.5L20 24L12 19L4 24L6 14.5L0 9.5L8 8.5L12 0Z"
-                fill="#F1AA1B" style="clip-path: inset(0 calc((1 - (4.9 - 3)) * 100%) 0 0)"></path>
-            </svg>
-            <svg width="22" height="22" viewBox="0 0 24 24">
-              <path id="gray-star-4" d="M12 0L16 8.5L24 9.5L18 14.5L20 24L12 19L4 24L6 14.5L0 9.5L8 8.5L12 0Z"
-                fill="#DCDCDC"></path>
-              <path id="gold-star-4" d="M12 0L16 8.5L24 9.5L18 14.5L20 24L12 19L4 24L6 14.5L0 9.5L8 8.5L12 0Z"
-                fill="#F1AA1B" style="clip-path: inset(0 calc((1 - (4.9 - 4)) * 100%) 0 0)"></path>
-            </svg>
-          </div>
-
-          <h1>Maria Capetillo</h1>
-          <p>STATE FARM INSURANCE AGENT</p>
-        </div>
-        <div class="group-2-2">
-          <a href="https://www.facebook.com/goproball" target="_blank"><img
-              src="../../images/icons/facebook.svg"></i></a>
-          <a href="https://twitter.com/gopro_ball" target="_blank"><img id="x" src="../../images/icons/x.svg"></i></a>
-          <a href="https://www.instagram.com/gopro_ball" target="_blank"><img
-              src="../../images/icons/instagram.svg"></i></a>
-          <a href="https://www.youtube.com/@goprosportsacademy1826" target="_blank"><img
-              src="../../images/icons/youtube.png"></i></a>
-        </div>
-      </div>
-    </div>
-
-
-  </div> -->
 </body>
 
 </html>
