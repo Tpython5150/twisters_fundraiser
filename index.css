@@ -34,5 +34,5 @@ img {
 }
 
 .transparent-bg::before { 
-    background-image: url('./images/background_images/nightTimeLights.jpg'); 
+    background-image: url('./images/background/nightTimeLights.jpg'); 
 }

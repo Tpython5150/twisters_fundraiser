@@ -1,32 +1,19 @@
-body {
+
+
+/* 
+ * {
+    margin: 0  !important;
+    padding: 0 !important;
+    box-sizing: content-box  !important;
+ } */
+
+
+.one-page-view {
     min-height: 100vh;
     display: grid;
     grid-template-rows: 1fr 70vh 20vh;
 }
 
-/*
-Navigation bar
-*/
-nav {
-    font-family: 'Brush Script MT', cursive;
-    height: 100%;
-    padding: 0 !important;
-}
-.navbar-brand {
-    height: 2.5em;
-}
-.navbar-brand img {
-    height: 100%;
-    object-fit: contain;
-}
-.navbar-nav {
-    font-size: 1.75em;
-    background-color: black;
-}
-.nav-item:hover {
-    background: rgb(80, 76, 196);
-    transition: all 0.75s;
-}
 
 /*
 Hides scroll bar. Apply to container.

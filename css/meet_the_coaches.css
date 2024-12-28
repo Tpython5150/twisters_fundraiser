@@ -1,141 +1,163 @@
-/* 
-main {
-    position: relative;
-    padding: 10px 70px;
-}
-
-
-.player-card {
-    border: 8px solid lightgray;
-    border-style: double;
-    background: white;
-}
-
-.player-name {
-    position: absolute;
-    font-family: 'Brush Script MT', cursive;
-    font-weight: bolder;
-    font-size: 1em;
-    color: white;
-    bottom: 15%;
-    left: 48%;
-    right: 50%;
-    z-index: 1;
-}
-
-.player-position {
-    position: absolute;
-    font-family: 'Brush Script MT', cursive;
-    font-weight: bolder;
-    font-size: 1em;
-    color: white;
-    bottom: 8%;
-    left: 50%;
-    z-index: 1;
-}
-
-.player-picture {
-    position: relative;
-}
-
-.flex-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 5px;
-}
-
-.player-card-container {
-    position: relative;
-    flex-basis: calc(100% / 6);
-    border: 1px solid black;
+/* * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-}
-
-@media screen and (max-width:1080px) {
-    .player-card-container {
-        flex-basis: calc(100% / 5);
-    }
-}
-
-@media screen and (max-width:990px) {
-    .player-card-container {
-        flex-basis: calc(100% / 4);
-    }
-}
-
-@media screen and (max-width:795px) {
-    .player-card-container {
-        flex-basis: calc(100% / 3);
-    }
-}
-
-@media screen and (max-width:575px) {
-    .player-card-container {
-        flex-basis: calc(100% / 2);
-    }
-}
-
-
-body::before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .55;
-    background-image: url('../images/background_images/Daygame_background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
 } */
 
-main {
-    position: relative;
-    width: 100%;
-    height: 100%;
+body {
+    display: flex;
+    flex-direction: column;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 128px);
+    flex-grow: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    row-gap: 25px;
+    padding-top: 25px;
+    padding-bottom: 89px;
+}
 
-.flexbox {
+footer {
+    position: relative !important;
+    width: 100%;
+    height: 64px;
+}
+
+/*
+  Coach
+  */
+div.coaches-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    gap: 17px;
-    position: absolute;
+    justify-content: space-evenly;
+}
+div.coach {
+    width: calc(100vw/4);
+    height: calc(100vw/4);
+
+    display: flex;
+    flex-direction: column;
+}
+
+div.coach.gp {
+    width: calc(100vw/3);
+    height: calc(100vw/3);
+}
+
+div.profile-pic {
+    width: 85%;
+    height: 85%;
+    flex-shrink: 0;
+
+    align-self: center;
+
+    border-radius: 50%;
+}
+
+div.profile-pic img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
-.baseball-card {
-    width: 33%;
-    height: 100%;
+div.info {
+    position: relative;
+    width: 100%;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.baseball-card-back {
-    width: 75%;
-    background: white;
-    height: 100%;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+h2 {
+    width: 100%;
+
     text-align: center;
-    margin: auto;
+    margin-top: 10px;
+
+    font-weight: 600;
+    font-size: 1.35em;
     color: white;
-    overflow-y: scroll;
-    background: rgba(100, 100, 255, 0.5);
 }
 
-.baseball-card-back p {
-    padding: 10px;
-    font-size: .9em;
+h2.name {
+    background: #36454F;
+    border: 3px inset white;
 }
 
-.transparent-bg::before { 
-    background-image: url('../images/background_images/Daygame_background.jpg');
+p.role {
+    text-align: center;
 }
 
-body {
-    row-gap: 10px;
+div.badge {
+    position: absolute;
+    top: -32px;
+    left: -20px;
+
+    width: 72px;
+    height: 72px;
+    background: lightgray;
+    border: 10px outset gray;
+
+    border-radius: 50%;
+}
+
+div.gp.badge {}
+
+div.badge img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+div.gp.badge img {}
+
+h2#special-mentions-text {}
+
+
+/*
+About Us
+*/
+#about-us {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+    padding: 50px 0;
+}
+
+#about-us h1,
+#about-us p {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    /* direction: column, centered horizontally */
+    margin-bottom: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#about-us h1 {
+    font-size: 1.5em;
+}
+
+#about-us p {
+    font-weight: 500;
+}
+
+#about-us p:nth-child(3) {
+    width: 55%;
+}
+
+#about-us p:nth-child(4),
+#about-us p:nth-child(5) {
+    width: 60%;
+}
+
+#about-us p:nth-child(6) {
+    width: 40%;
+    font-size: 1.01em;
 }

@@ -7,12 +7,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="css/common.css" type="text/css">
+  <link rel="stylesheet" href="css/navbar.css" type="text/css">
   <link rel="stylesheet" href="index.css" type="text/css">
   <title>Twister Home Page</title>
 </head>
 
-<body class="bg-dark text-white transparent-bg">
-  <header><!-- Bootstrap Navbar --></header>
+<body class="one-page-view bg-dark text-white transparent-bg">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#NAVBAR_TOGGLER" aria-controls="NAVBAR_TOGGLER" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand text-center" href="#"><img src="../images/logo/transparent_twisters_logo.png"/></a>
+        <div class="collapse navbar-collapse" id="NAVBAR_TOGGLER">
+          <ul class="navbar-nav text-center mx-auto bg-dark">
+            <li class="nav-item">
+              <a id="home" class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a id="coaches" class="nav-link" href="../html/meet_the_coaches.html">Meet The Coaches</a>
+            </li>
+            <li class="nav-item">
+              <a id="fundraiser" class="nav-link" href="../html/fundraiser.html">Fundraiser</a>
+            </li>
+            <li class="nav-item">
+              <a id="sponsors" class="nav-link" href="../html/sponsors.html">Sponsors</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+   </header>
 
   <main>
     <div class="flex-grid">

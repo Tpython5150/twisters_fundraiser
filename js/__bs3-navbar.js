@@ -19,11 +19,11 @@ const createNavBar = (title) => {
     return `
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand text-center" href="#"><img src="${workdir + navBrandUrl}"/></a>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <div class="collapse navbar-collapse" id="navbarToggler">
           <ul class="navbar-nav text-center mx-auto bg-dark">
             <li class="nav-item">
               <a id="home" class="nav-link" href="${workdir + homeRef}">${homeLabel}</a>
@@ -44,7 +44,7 @@ const createNavBar = (title) => {
   ` 
     };
 
-    const activateLink = (title) => {
+    const setActiveLink = (title) => {
         $node = null;
         if(title == 'Twister Home Page') {
             $node = $('#home')
@@ -68,7 +68,7 @@ const createNavBar = (title) => {
     }
 
     $(document).ready(function () {
-        const title = $('title').html();
-        $('header').html(createNavBar(title));
-        activateLink(title);
+        const page = $('title').html();
+        $('header').html(createNavBar(page));
+        setActiveLink(page);
     })
