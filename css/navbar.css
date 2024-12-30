@@ -9,6 +9,7 @@ header {
 
     font-family: 'Brush Script MT', cursive;
     border-bottom: 5px solid lavender;
+    background: black;
 }
 nav.navbar {
     width: 100%;
@@ -28,11 +29,13 @@ a.navbar-brand img {
 /* div.collapse {} */
 ul.navbar-nav {
     gap: 2.5em;
+    background: black;
 }
 li.nav-item {
     height: 36px;
 
     line-height: 18px;
+    background: black;
 
     transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -43,4 +46,5 @@ li.nav-item:hover {
 }
 a.nav-link {
     font-size: 18pt;
+    background: black;
 }

@@ -1,0 +1,181 @@
+.transparent-bg::before {
+    background-image: url('../images/background/softball_field_2.jpg');
+}
+
+/* layout */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+header,
+footer {
+    width: 100%;
+    height: 64px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+div.sidenav {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    font-family: 'Brush Script MT', cursive;
+}
+
+div.sidenav ul {
+    position: fixed;
+    top: 20%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 16px;
+}
+
+div.sidenav li {
+    font-size: 1.75em;
+    padding: 3px;
+    color: gray;
+    transition: all 0.5s;
+}
+
+div.sidenav li:hover,
+div.sidenav li.__active {
+    font-size: 1.8em;
+    transform: translate(5px, 5px);
+    color: white;
+    text-shadow: white 0 0 1em;
+}
+
+div.sidenav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+div.container {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Calendar Styling */
+div.tax-document.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 66vh;
+    transform: translateY(-15%);
+}
+div.calendar.content,
+div.coupon-card.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 66vh;
+    transform: translateY(-15%);
+}
+
+div.tax-document.content img {
+    width: 100%;
+    height: fit-content;
+}
+
+div.calendar.content img,
+div.coupon-card img {
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Raffle Styling */
+div.raffle.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+div.prizes {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background: pink;
+    gap: 10px;
+    justify-content: center;
+    transform: translateY(-25px);
+}
+
+div.prize {
+    width: 300px;
+    height: 300px;
+    background: orange;
+    border: 1px solid black;
+    transition: all 1s;
+}
+
+div.first.prize {
+    transform: translateY(35px) rotateZ(-15deg);
+}
+div.first.prize:hover {
+    transform: translateY(35px) rotateZ(-15deg) scale(1.1);
+    z-index: 1;
+}
+
+div.second.prize {
+    transform: translate(0);
+}
+div.second.prize:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+div.third.prize {
+    transform: translateY(35px) rotateZ(15deg);
+}
+div.third.prize:hover {
+    transform: translateY(35px) rotateZ(15deg) scale(1.1);
+    z-index: 1;
+}
+
+div#selected-prize {
+    color: black;
+    width: 300px;
+    height: 50px;
+    background: yellow;
+    justify-self: center;
+    transform: translateY(-25px);
+    text-align: center;
+    border: 1px solid gold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.prize img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: lightgray;
+    border: 5px solid white;
+}

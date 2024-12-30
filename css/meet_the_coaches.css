@@ -1,12 +1,21 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
+div.bg {
+    position: fixed;
+    height: 100%;
+    width: 100vw; 
+    opacity: 0.65;
+    background: black;
+    z-index: -1;
+}
+div.bg img {
+    width: 100%;
+    object-fit: contain;
+}
 
 body {
+    position: relative;
     display: flex;
     flex-direction: column;
+    background: black;
 }
 
 main {
@@ -100,9 +109,15 @@ div.badge {
     width: 72px;
     height: 72px;
     background: lightgray;
-    border: 10px outset gray;
+    border: 10px outset white;
 
-    border-radius: 50%;
+    transform: rotateZ(45deg);
+}
+
+div.badge:hover {
+    transition: all 0.2s;
+    background: white;
+    box-shadow: 0 0 10px white;
 }
 
 div.gp.badge {}
@@ -111,6 +126,7 @@ div.badge img {
     width: 100%;
     height: 100%;
     object-fit: contain;
+    transform: rotateZ(-45deg);
 }
 
 div.gp.badge img {}

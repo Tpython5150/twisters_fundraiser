@@ -125,7 +125,8 @@ $(document).ready(function() {
     }
   });
 
+  /* Default Sponsor */
   if($('title').html() == 'Sponsors') {
-    $('main').html(contact);
+    $('main').html(goProSportsDomeAd);
   }
 });
