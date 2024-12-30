@@ -24,7 +24,7 @@ const createNavBar = (title) => {
         </button>
         <a class="navbar-brand text-center" href="#"><img src="${workdir + navBrandUrl}"/></a>
         <div class="collapse navbar-collapse" id="navbarToggler">
-          <ul class="navbar-nav text-center mx-auto bg-dark">
+          <ul class="navbar-nav text-center mx-auto">
             <li class="nav-item">
               <a id="home" class="nav-link" href="${workdir + homeRef}">${homeLabel}</a>
             </li>
