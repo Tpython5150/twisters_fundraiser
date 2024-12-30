@@ -1,0 +1,179 @@
+div.bg {
+    position: fixed;
+    height: 100%;
+    width: 100vw; 
+    opacity: 0.65;
+    background: black;
+    z-index: -1;
+}
+div.bg img {
+    width: 100%;
+    object-fit: contain;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background: black;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 128px);
+    flex-grow: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    row-gap: 25px;
+    padding-top: 25px;
+    padding-bottom: 89px;
+}
+
+footer {
+    position: relative !important;
+    width: 100%;
+    height: 64px;
+}
+
+/*
+  Coach
+  */
+div.coaches-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+div.coach {
+    width: calc(100vw/4);
+    height: calc(100vw/4);
+
+    display: flex;
+    flex-direction: column;
+}
+
+div.coach.gp {
+    width: calc(100vw/3);
+    height: calc(100vw/3);
+}
+
+div.profile-pic {
+    width: 85%;
+    height: 85%;
+    flex-shrink: 0;
+
+    align-self: center;
+
+    border-radius: 50%;
+}
+
+div.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+div.info {
+    position: relative;
+    width: 100%;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    width: 100%;
+
+    text-align: center;
+    margin-top: 10px;
+
+    font-weight: 600;
+    font-size: 1.35em;
+    color: white;
+}
+
+h2.name {
+    background: #36454F;
+    border: 3px inset white;
+}
+
+p.role {
+    text-align: center;
+}
+
+div.badge {
+    position: absolute;
+    top: -32px;
+    left: -20px;
+
+    width: 72px;
+    height: 72px;
+    background: lightgray;
+    border: 10px outset white;
+
+    transform: rotateZ(45deg);
+}
+
+div.badge:hover {
+    transition: all 0.2s;
+    background: white;
+    box-shadow: 0 0 10px white;
+}
+
+div.gp.badge {}
+
+div.badge img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: rotateZ(-45deg);
+}
+
+div.gp.badge img {}
+
+h2#special-mentions-text {}
+
+
+/*
+About Us
+*/
+#about-us {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-self: center;
+    padding: 50px 0;
+}
+
+#about-us h1,
+#about-us p {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    /* direction: column, centered horizontally */
+    margin-bottom: 10px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#about-us h1 {
+    font-size: 1.5em;
+}
+
+#about-us p {
+    font-weight: 500;
+}
+
+#about-us p:nth-child(3) {
+    width: 55%;
+}
+
+#about-us p:nth-child(4),
+#about-us p:nth-child(5) {
+    width: 60%;
+}
+
+#about-us p:nth-child(6) {
+    width: 40%;
+    font-size: 1.01em;
+}

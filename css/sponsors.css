@@ -1,112 +1,255 @@
-nav {
-    font-family: 'Brush Script MT', cursive;
-    font-size: 2em;
-}
-
-.navbar-brand {
-    width: 10em;
-}
-
-.nav-item:hover {
-    background: rgb(80, 76, 196);
-    transition: all 0.75s;
-}
-
-img {
-    width: 100%;
-    object-fit: contain;
-}
-
-.flex-grid {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    gap: 10px;
-}
-
-.fundraiser-list {
-    font-family: 'Brush Script MT', cursive;
-    padding: 10px;
-}
-
-.fundraiser-list h2 {
-    font-size: 3em;
-}
-
-.fundraiser-list ul {
-    list-style: none;
-    font-size: 2em;
-    padding: 0 25px;
-}
-
-.tax-document img {
-    height: 500px;
-    object-fit: contain;
-}
-
-#my-carousel {
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 10px;
-    border: 1px solid white;
-    height: 20%;
-    padding: 10px;
-    background: white;
-    overflow-x: scroll;
-    border: 1px solid black;
-
-}
-.my-carousel-item {
-    width: 33%;
-    height: 100%;
-    flex-shrink: 0;
-    border: 2px solid lightgray;
-    padding: 3px;
-    box-shadow: 5px 5px 10px gray;
-}
-
-#my-carousel img {
-    height: 100%;
-    object-fit: contain;
-}
-
-.bg-black {
-    background: black;
-}
-
-.hide-scroll::-webkit-scrollbar {
-    display: none;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-.sponsors-plug {
-    width: 100%;
-    height: 100%;
-    background: white;
-}
-
-body {
-    position: relative;
-}
-
-body::before {
-    content: ' ';
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    opacity: .55;
-    background-image: url('./images/background_images/nightTimeLights.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 main {
-    position: relative;
+  height: 100%;
+}
+
+/*
+Go Pro Sports Dome
+*/
+.go-pro-sports-dome.layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+  align-content: center;
+}
+
+.go-pro-sports-dome .banner {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  background: black;
+  padding: 10px 0;
+}
+
+.go-pro-sports-dome .banner img {
+  height: 100%;
+
+}
+
+.go-pro-sports-dome .row-1 {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+}
+
+.go-pro-sports-dome video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: .75;
+  z-index: -1;
+}
+
+.go-pro-sports-dome .row-1-group-1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-weight: 900;
+  text-shadow: -3px 0 3px red, 3px 0 3px red, 0 3px 3px red, 0 -3px 3px red, -4px 0 4px white, 4px 0 4px white, 0 4px 4px white, 0 -4px 4px white;
+  white-space: nowrap;
+}
+
+.go-pro-sports-dome .row-1-group-1 h1 {
+  font-size: 4rem;
+}
+
+.go-pro-sports-dome .row-1-group-1 p {
+  font-size: 1.5rem;
+}
+
+.go-pro-sports-dome .row-1-group-1 .button {
+  width: 200px;
+  height: 50px;
+  line-height: 45px;
+  border-radius: 10px;
+  background: red;
+  font-family: Arial;
+  font-weight: 900;
+  text-shadow: none;
+  box-shadow: none;
+  border: 3px solid black;
+  opacity: 0.05;
+  transform: scale(0.85);
+  transition: all 0.75s;
+  text-decoration: none;
+}
+
+.go-pro-sports-dome .row-1-group-1 .button:hover {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/*
+State Farm
+*/
+.state-farm.layout {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: white;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.state-farm .banner {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 10%;
+  background: white;
+  border-bottom: 5px solid red;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.state-farm .banner img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.8);
+}
+
+.state-farm .row-1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  min-height: 20%;
+  padding: 10px;
+  gap: 5%;
+  row-gap: 0;
+  align-items: center;
+  margin: auto;
+}
+
+.state-farm .row-1-col-1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.state-farm .profile-image {
+  width: calc(15vw);
+  height: calc(15vw);
+  border-radius: 50%;
+  border: 20px double white;
+  background-image: url("../images/sponsors/state_farm_profile_centered.png");
+  background-size: 125%;
+  background-color: red;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-origin: padding-box;
+  overflow: hidden;
+  margin: auto;
+}
+
+.state-farm .caption-text {
+  width: 100%;
+  text-align: center;
+  letter-spacing: normal;
+}
+
+.state-farm .caption-text h2 {
+  font-weight: 900;
+  flex-shrink: 1;
+}
+
+.state-farm .caption-text p {
+  font-size: 1rem;
+  font-weight: 900;
+  font-style: italic;
+  color: red;
+}
+
+.state-farm .row-1-col-2 {
+  font-weight: 900;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.state-farm .row-1-col-2 h2 {
+  font-weight: 900;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.state-farm .row-1-col-2 h1 {
+  font-weight: 900;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.state-farm .row-2 {
+  width: 100%;
+}
+
+
+
+
+.social-media img {
+  width: 64px;
+  height: 64px;
+  transition: all 1s;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  transform: scale(0.75);
+
+}
+
+.social-media img:hover {
+  transform: scale(1);
+}
+
+.social-media #x {
+  background-color: white;
+  border-radius: 50%;
+}
+
+.state-farm .social-media {
+  justify-self: end;
+  padding-top: 2em;
+}
+
+.phone {
+  text-decoration: none;
+  transition: all 1s;
+  transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  
+}
+
+a.phone:hover {
+  font-size: 4rem;
+  color: red;
+}
+
+/*
+Contact
+*/
+.contact.layout {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  background: white;
+  width: 100%;
+  height: 100%;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial;
+  font-weight: 900;
 }
